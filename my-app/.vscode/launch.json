@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MATMOTOFIX-Dyno",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/build-debug/Debug/MATMOTOFIX-Dyno.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/scripts/build-debug/Debug",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "build-debug"
+        },
+        {
+            "name": "Attach to MATMOTOFIX-Dyno",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}

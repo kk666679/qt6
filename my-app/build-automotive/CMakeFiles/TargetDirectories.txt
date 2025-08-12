@@ -1,0 +1,5 @@
+/workspaces/glg/my-app/build-automotive/CMakeFiles/QtAutomotive.dir
+/workspaces/glg/my-app/build-automotive/CMakeFiles/edit_cache.dir
+/workspaces/glg/my-app/build-automotive/CMakeFiles/rebuild_cache.dir
+/workspaces/glg/my-app/build-automotive/CMakeFiles/QtAutomotive_autogen_timestamp_deps.dir
+/workspaces/glg/my-app/build-automotive/CMakeFiles/QtAutomotive_autogen.dir

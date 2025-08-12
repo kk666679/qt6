@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+d9a389e7ec4cca00712dd76f359d8a83 CMakeFiles/QtAutomotive_autogen
+d9a389e7ec4cca00712dd76f359d8a83 CMakeFiles/QtAutomotive_autogen_timestamp_deps
+d6baab6bb321c5a9fedd372121d123be QtAutomotive_autogen/timestamp
