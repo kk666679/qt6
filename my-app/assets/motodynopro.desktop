@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=MotoDynoPro
+Comment=Professional Motorcycle Dynamometer Software
+Exec=MotoDynoPro
+Icon=motodynopro
+Terminal=false
+Categories=Engineering;Science;
+Keywords=motorcycle;dyno;dynamometer;performance;testing;
+StartupNotify=true

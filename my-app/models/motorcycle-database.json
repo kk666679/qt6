@@ -1,0 +1,746 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-01-15T10:30:00Z",
+  "total_models": 150,
+  "categories": ["Sport", "Naked", "Cruiser", "Adventure", "Touring", "Supermoto", "Enduro", "Scooter", "Electric"],
+  "manufacturers": [
+    "Yamaha",
+    "Honda",
+    "Kawasaki",
+    "Suzuki",
+    "Ducati",
+    "BMW",
+    "Harley-Davidson",
+    "KTM",
+    "Triumph",
+    "Aprilia",
+    "MV Agusta",
+    "Indian",
+    "Zero",
+    "Energica"
+  ],
+  "models": [
+    {
+      "id": "yamaha-yzf-r1-2024",
+      "name": "Yamaha YZF-R1 2024",
+      "manufacturer": "Yamaha",
+      "category": "Sport",
+      "year": 2024,
+      "description": "The ultimate superbike with MotoGP-derived technology and advanced electronics",
+      "specifications": {
+        "engine": {
+          "displacement": 998,
+          "cylinders": 4,
+          "type": "Inline-4",
+          "bore_stroke": "79.0 x 50.9",
+          "compression_ratio": 13.0,
+          "max_power": 200,
+          "max_power_rpm": 13500,
+          "max_torque": 112.4,
+          "max_torque_rpm": 11500,
+          "fuel_system": "Fuel Injection",
+          "cooling": "Liquid"
+        },
+        "dimensions": {
+          "length": 2055,
+          "width": 690,
+          "height": 1165,
+          "wheelbase": 1405,
+          "seat_height": 855,
+          "ground_clearance": 130,
+          "dry_weight": 199,
+          "wet_weight": 201,
+          "fuel_capacity": 17.0
+        },
+        "performance": {
+          "top_speed": 299,
+          "acceleration_0_100": 3.1,
+          "quarter_mile": 10.8,
+          "fuel_consumption": 6.8
+        },
+        "chassis": {
+          "frame_type": "Deltabox",
+          "front_suspension": "KYB 43mm USD fork",
+          "rear_suspension": "KYB monoshock",
+          "front_brake": "Dual 320mm discs, Brembo c",
+          "rear_brake": "Single 220mm disc",
+          "front_tire": "120/70ZR17",
+          "rear_tire": "200/55ZR17"
+        }
+      },
+      "visual_properties": {
+        "primary_color": "#0066CC",
+        "secondary_color": "#FFFFFF",
+        "accent_color": "#FF0000",
+        "material_finish": "Glossy",
+        "decal_package": "Racing",
+        "led_lighting": true,
+        "carbon_fiber_parts": ["Fairing", "Wheels", "Exhaust"]
+      },
+      "animation_components": {
+        "wheels": {
+          "front_wheel": {
+            "name": "front_wheel",
+            "radius": 0.31,
+            "width": 0.12,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.32
+          },
+          "rear_wheel": {
+            "name": "rear_wheel",
+            "radius": 0.315,
+            "width": 0.2,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.22
+          }
+        },
+        "suspension": {
+          "front_suspension": {
+            "name": "front_forks",
+            "travel": 120,
+            "type": "USD",
+            "adjustable": true,
+            "compression_range": [0, 120]
+          },
+          "rear_suspension": {
+            "name": "rear_shock",
+            "travel": 130,
+            "type": "Monoshock",
+            "adjustable": true,
+            "compression_range": [0, 130]
+          }
+        },
+        "engine": {
+          "name": "engine_block",
+          "vibration_frequency": 2.0,
+          "idle_rpm": 1200,
+          "redline_rpm": 14500,
+          "vibration_amplitude": 0.002
+        },
+        "exhaust": {
+          "name": "exhaust_system",
+          "heat_zones": ["header", "mid_pipe", "silencer"],
+          "max_temperature": 800,
+          "glow_effect": true
+        },
+        "controls": {
+          "handlebars": {
+            "name": "handlebars",
+            "steering_range": [-45, 45],
+            "return_spring": true
+          },
+          "throttle": {
+            "name": "throttle_body",
+            "rotation_range": [0, 90],
+            "response_time": 50
+          },
+          "gear_shifter": {
+            "name": "gear_lever",
+            "positions": 6,
+            "shift_travel": 20
+          }
+        },
+        "chain": {
+          "name": "drive_chain",
+          "links": 120,
+          "pitch": 0.0127,
+          "tension_range": [0.8, 1.2]
+        }
+      },
+      "model_files": {
+        "high_detail": "yamaha-yzf-r1-2024-hd.glb",
+        "medium_detail": "yamaha-yzf-r1-2024-md.glb",
+        "low_detail": "yamaha-yzf-r1-2024-ld.glb",
+        "textures": [
+          "yamaha-r1-diffuse-4k.jpg",
+          "yamaha-r1-normal-4k.jpg",
+          "yamaha-r1-metallic-4k.jpg",
+          "yamaha-r1-roughness-4k.jpg"
+        ],
+        "animations": [
+          "wheel_rotation.gltf",
+          "suspension_compression.gltf",
+          "engine_vibration.gltf",
+          "steering_input.gltf"
+        ]
+      },
+      "tags": ["superbike", "track", "racing", "high-performance", "yamaha", "r1"],
+      "rating": 4.8,
+      "download_count": 15420,
+      "file_size": 45678912,
+      "license": "Creative Commons",
+      "upload_date": "2024-01-10T14:30:00Z",
+      "last_modified": "2024-01-12T09:15:00Z"
+    },
+    {
+      "id": "honda-cbr1000rr-2024",
+      "name": "Honda CBR1000RR-R Fireblade SP 2024",
+      "manufacturer": "Honda",
+      "category": "Sport",
+      "year": 2024,
+      "description": "Honda's flagship superbike with advanced aerodynamics and MotoGP technology",
+      "specifications": {
+        "engine": {
+          "displacement": 999,
+          "cylinders": 4,
+          "type": "Inline-4",
+          "bore_stroke": "81.0 x 48.5",
+          "compression_ratio": 13.0,
+          "max_power": 218,
+          "max_power_rpm": 14500,
+          "max_torque": 113,
+          "max_torque_rpm": 12500,
+          "fuel_system": "PGM-FI",
+          "cooling": "Liquid"
+        },
+        "dimensions": {
+          "length": 2065,
+          "width": 720,
+          "height": 1125,
+          "wheelbase": 1455,
+          "seat_height": 830,
+          "ground_clearance": 140,
+          "dry_weight": 201,
+          "wet_weight": 203,
+          "fuel_capacity": 16.1
+        },
+        "performance": {
+          "top_speed": 305,
+          "acceleration_0_100": 2.9,
+          "quarter_mile": 10.6,
+          "fuel_consumption": 7.2
+        },
+        "chassis": {
+          "frame_type": "Twin Spar Aluminum",
+          "front_suspension": "Öhlins NPX 43mm USD",
+          "rear_suspension": "Öhlins TTX36 monoshock",
+          "front_brake": "Dual 330mm Brembo Stylema",
+          "rear_brake": "Single 220mm disc",
+          "front_tire": "120/70ZR17",
+          "rear_tire": "200/55ZR17"
+        }
+      },
+      "visual_properties": {
+        "primary_color": "#FF0000",
+        "secondary_color": "#000000",
+        "accent_color": "#FFFFFF",
+        "material_finish": "Glossy",
+        "decal_package": "HRC",
+        "led_lighting": true,
+        "carbon_fiber_parts": ["Winglets", "Wheels", "Subframe"]
+      },
+      "animation_components": {
+        "wheels": {
+          "front_wheel": {
+            "name": "front_wheel",
+            "radius": 0.31,
+            "width": 0.12,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.33
+          },
+          "rear_wheel": {
+            "name": "rear_wheel",
+            "radius": 0.315,
+            "width": 0.2,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.22
+          }
+        },
+        "suspension": {
+          "front_suspension": {
+            "name": "front_forks",
+            "travel": 120,
+            "type": "USD",
+            "adjustable": true,
+            "compression_range": [0, 120]
+          },
+          "rear_suspension": {
+            "name": "rear_shock",
+            "travel": 130,
+            "type": "Monoshock",
+            "adjustable": true,
+            "compression_range": [0, 130]
+          }
+        },
+        "engine": {
+          "name": "engine_block",
+          "vibration_frequency": 2.0,
+          "idle_rpm": 1100,
+          "redline_rpm": 15000,
+          "vibration_amplitude": 0.0018
+        },
+        "exhaust": {
+          "name": "exhaust_system",
+          "heat_zones": ["header", "collector", "silencer"],
+          "max_temperature": 850,
+          "glow_effect": true
+        },
+        "controls": {
+          "handlebars": {
+            "name": "clip_ons",
+            "steering_range": [-40, 40],
+            "return_spring": true
+          },
+          "throttle": {
+            "name": "throttle_bodies",
+            "rotation_range": [0, 85],
+            "response_time": 45
+          },
+          "gear_shifter": {
+            "name": "gear_lever",
+            "positions": 6,
+            "shift_travel": 18
+          }
+        },
+        "chain": {
+          "name": "drive_chain",
+          "links": 118,
+          "pitch": 0.0127,
+          "tension_range": [0.9, 1.1]
+        },
+        "aerodynamics": {
+          "winglets": {
+            "name": "front_winglets",
+            "downforce_coefficient": 0.15,
+            "drag_coefficient": 0.02
+          }
+        }
+      },
+      "model_files": {
+        "high_detail": "honda-cbr1000rr-2024-hd.glb",
+        "medium_detail": "honda-cbr1000rr-2024-md.glb",
+        "low_detail": "honda-cbr1000rr-2024-ld.glb",
+        "textures": [
+          "honda-cbr-diffuse-4k.jpg",
+          "honda-cbr-normal-4k.jpg",
+          "honda-cbr-metallic-4k.jpg",
+          "honda-cbr-roughness-4k.jpg",
+          "honda-hrc-decals-2k.jpg"
+        ],
+        "animations": [
+          "wheel_rotation.gltf",
+          "suspension_compression.gltf",
+          "engine_vibration.gltf",
+          "winglet_flex.gltf"
+        ]
+      },
+      "tags": ["superbike", "track", "racing", "aerodynamics", "honda", "fireblade"],
+      "rating": 4.9,
+      "download_count": 18750,
+      "file_size": 52341760,
+      "license": "Creative Commons",
+      "upload_date": "2024-01-08T11:20:00Z",
+      "last_modified": "2024-01-14T16:45:00Z"
+    },
+    {
+      "id": "ducati-panigale-v4s-2024",
+      "name": "Ducati Panigale V4 S 2024",
+      "manufacturer": "Ducati",
+      "category": "Sport",
+      "year": 2024,
+      "description": "Italian superbike masterpiece with V4 Desmosedici Stradale engine",
+      "specifications": {
+        "engine": {
+          "displacement": 1103,
+          "cylinders": 4,
+          "type": "V4",
+          "bore_stroke": "81.0 x 53.5",
+          "compression_ratio": 14.0,
+          "max_power": 214,
+          "max_power_rpm": 13000,
+          "max_torque": 124,
+          "max_torque_rpm": 10000,
+          "fuel_system": "Ride-by-Wire",
+          "cooling": "Liquid"
+        },
+        "dimensions": {
+          "length": 2056,
+          "width": 730,
+          "height": 1145,
+          "wheelbase": 1469,
+          "seat_height": 830,
+          "ground_clearance": 140,
+          "dry_weight": 195,
+          "wet_weight": 197,
+          "fuel_capacity": 16.0
+        },
+        "performance": {
+          "top_speed": 300,
+          "acceleration_0_100": 3.0,
+          "quarter_mile": 10.7,
+          "fuel_consumption": 7.5
+        },
+        "chassis": {
+          "frame_type": "Monocoque",
+          "front_suspension": "Öhlins NIX-30 43mm USD",
+          "rear_suspension": "Öhlins TTX36 monoshock",
+          "front_brake": "Dual 330mm Brembo Stylema",
+          "rear_brake": "Single 245mm disc",
+          "front_tire": "120/70ZR17",
+          "rear_tire": "200/60ZR17"
+        }
+      },
+      "visual_properties": {
+        "primary_color": "#DC143C",
+        "secondary_color": "#000000",
+        "accent_color": "#FFFFFF",
+        "material_finish": "Matte",
+        "decal_package": "Corse",
+        "led_lighting": true,
+        "carbon_fiber_parts": ["Fairing", "Wheels", "Swingarm", "Subframe"]
+      },
+      "animation_components": {
+        "wheels": {
+          "front_wheel": {
+            "name": "front_wheel",
+            "radius": 0.31,
+            "width": 0.12,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.33
+          },
+          "rear_wheel": {
+            "name": "rear_wheel",
+            "radius": 0.315,
+            "width": 0.2,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.245
+          }
+        },
+        "suspension": {
+          "front_suspension": {
+            "name": "front_forks",
+            "travel": 120,
+            "type": "USD",
+            "adjustable": true,
+            "compression_range": [0, 120]
+          },
+          "rear_suspension": {
+            "name": "rear_shock",
+            "travel": 130,
+            "type": "Monoshock",
+            "adjustable": true,
+            "compression_range": [0, 130]
+          }
+        },
+        "engine": {
+          "name": "v4_engine",
+          "vibration_frequency": 2.5,
+          "idle_rpm": 1100,
+          "redline_rpm": 14500,
+          "vibration_amplitude": 0.0025,
+          "v_angle": 90
+        },
+        "exhaust": {
+          "name": "akrapovic_system",
+          "heat_zones": ["headers", "collector", "silencer"],
+          "max_temperature": 900,
+          "glow_effect": true,
+          "sound_enhancement": true
+        },
+        "controls": {
+          "handlebars": {
+            "name": "clip_ons",
+            "steering_range": [-42, 42],
+            "return_spring": true
+          },
+          "throttle": {
+            "name": "throttle_bodies",
+            "rotation_range": [0, 90],
+            "response_time": 40
+          },
+          "gear_shifter": {
+            "name": "quickshift_lever",
+            "positions": 6,
+            "shift_travel": 15,
+            "quickshift": true
+          }
+        },
+        "chain": {
+          "name": "drive_chain",
+          "links": 120,
+          "pitch": 0.0127,
+          "tension_range": [0.85, 1.15]
+        }
+      },
+      "model_files": {
+        "high_detail": "ducati-panigale-v4s-2024-hd.glb",
+        "medium_detail": "ducati-panigale-v4s-2024-md.glb",
+        "low_detail": "ducati-panigale-v4s-2024-ld.glb",
+        "textures": [
+          "ducati-panigale-diffuse-4k.jpg",
+          "ducati-panigale-normal-4k.jpg",
+          "ducati-panigale-metallic-4k.jpg",
+          "ducati-panigale-roughness-4k.jpg",
+          "ducati-carbon-fiber-2k.jpg"
+        ],
+        "animations": [
+          "wheel_rotation.gltf",
+          "suspension_compression.gltf",
+          "v4_engine_vibration.gltf",
+          "quickshift_action.gltf"
+        ]
+      },
+      "tags": ["superbike", "v4", "italian", "track", "ducati", "panigale"],
+      "rating": 4.7,
+      "download_count": 12890,
+      "file_size": 48765432,
+      "license": "Creative Commons",
+      "upload_date": "2024-01-05T09:45:00Z",
+      "last_modified": "2024-01-11T13:20:00Z"
+    },
+    {
+      "id": "bmw-s1000rr-2024",
+      "name": "BMW S1000RR 2024",
+      "manufacturer": "BMW",
+      "category": "Sport",
+      "year": 2024,
+      "description": "German precision engineering with advanced rider assistance systems",
+      "specifications": {
+        "engine": {
+          "displacement": 999,
+          "cylinders": 4,
+          "type": "Inline-4",
+          "bore_stroke": "80.0 x 49.7",
+          "compression_ratio": 13.3,
+          "max_power": 210,
+          "max_power_rpm": 13750,
+          "max_torque": 113,
+          "max_torque_rpm": 11000,
+          "fuel_system": "BMS-O",
+          "cooling": "Liquid"
+        },
+        "dimensions": {
+          "length": 2073,
+          "width": 848,
+          "height": 1138,
+          "wheelbase": 1441,
+          "seat_height": 824,
+          "ground_clearance": 130,
+          "dry_weight": 197,
+          "wet_weight": 199,
+          "fuel_capacity": 16.5
+        },
+        "performance": {
+          "top_speed": 299,
+          "acceleration_0_100": 3.1,
+          "quarter_mile": 10.9,
+          "fuel_consumption": 6.9
+        },
+        "chassis": {
+          "frame_type": "Bridge-type",
+          "front_suspension": "BMW Motorrad USD 45mm",
+          "rear_suspension": "BMW Motorrad monoshock",
+          "front_brake": "Dual 320mm M discs",
+          "rear_brake": "Single 220mm disc",
+          "front_tire": "120/70ZR17",
+          "rear_tire": "190/55ZR17"
+        }
+      },
+      "visual_properties": {
+        "primary_color": "#1E90FF",
+        "secondary_color": "#FFFFFF",
+        "accent_color": "#000000",
+        "material_finish": "Metallic",
+        "decal_package": "M Sport",
+        "led_lighting": true,
+        "carbon_fiber_parts": ["Wheels", "Winglets"]
+      },
+      "animation_components": {
+        "wheels": {
+          "front_wheel": {
+            "name": "front_wheel",
+            "radius": 0.31,
+            "width": 0.12,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.32
+          },
+          "rear_wheel": {
+            "name": "rear_wheel",
+            "radius": 0.315,
+            "width": 0.19,
+            "material": "Carbon Fiber",
+            "brake_disc": true,
+            "disc_diameter": 0.22
+          }
+        },
+        "suspension": {
+          "front_suspension": {
+            "name": "front_forks",
+            "travel": 120,
+            "type": "USD",
+            "adjustable": true,
+            "compression_range": [0, 120],
+            "electronic_adjustment": true
+          },
+          "rear_suspension": {
+            "name": "rear_shock",
+            "travel": 130,
+            "type": "Monoshock",
+            "adjustable": true,
+            "compression_range": [0, 130],
+            "electronic_adjustment": true
+          }
+        },
+        "engine": {
+          "name": "engine_block",
+          "vibration_frequency": 2.0,
+          "idle_rpm": 1150,
+          "redline_rpm": 14600,
+          "vibration_amplitude": 0.0015
+        },
+        "exhaust": {
+          "name": "exhaust_system",
+          "heat_zones": ["header", "collector", "silencer"],
+          "max_temperature": 780,
+          "glow_effect": true
+        },
+        "controls": {
+          "handlebars": {
+            "name": "handlebars",
+            "steering_range": [-45, 45],
+            "return_spring": true
+          },
+          "throttle": {
+            "name": "throttle_body",
+            "rotation_range": [0, 88],
+            "response_time": 55
+          },
+          "gear_shifter": {
+            "name": "gear_lever",
+            "positions": 6,
+            "shift_travel": 22
+          }
+        },
+        "chain": {
+          "name": "drive_chain",
+          "links": 116,
+          "pitch": 0.0127,
+          "tension_range": [0.9, 1.1]
+        },
+        "electronics": {
+          "traction_control": true,
+          "wheelie_control": true,
+          "launch_control": true,
+          "abs": "Race ABS Pro"
+        }
+      },
+      "model_files": {
+        "high_detail": "bmw-s1000rr-2024-hd.glb",
+        "medium_detail": "bmw-s1000rr-2024-md.glb",
+        "low_detail": "bmw-s1000rr-2024-ld.glb",
+        "textures": [
+          "bmw-s1000rr-diffuse-4k.jpg",
+          "bmw-s1000rr-normal-4k.jpg",
+          "bmw-s1000rr-metallic-4k.jpg",
+          "bmw-s1000rr-roughness-4k.jpg"
+        ],
+        "animations": [
+          "wheel_rotation.gltf",
+          "suspension_compression.gltf",
+          "engine_vibration.gltf",
+          "electronic_adjustment.gltf"
+        ]
+      },
+      "tags": ["superbike", "german", "electronics", "track", "bmw", "s1000rr"],
+      "rating": 4.6,
+      "download_count": 11250,
+      "file_size": 41234567,
+      "license": "Creative Commons",
+      "upload_date": "2024-01-03T15:30:00Z",
+      "last_modified": "2024-01-09T10:15:00Z"
+    }
+  ],
+  "animation_presets": {
+    "track_day": {
+      "name": "Track Day",
+      "description": "High-performance track riding animations",
+      "settings": {
+        "enableWheelRotation": true,
+        "enableSuspensionMovement": true,
+        "enableEngineVibration": true,
+        "enableExhaustEffects": true,
+        "enableBrakeAnimation": true,
+        "enableChainMovement": true,
+        "enableSteeringAnimation": true,
+        "enableGearShifting": true,
+        "enableThrottleMovement": true,
+        "wheelRotationSpeed": 1.2,
+        "suspensionSensitivity": 1.5,
+        "vibrationIntensity": 1.3,
+        "animationSmoothing": 0.9,
+        "maxFPS": 60,
+        "adaptiveQuality": false
+      }
+    },
+    "street_riding": {
+      "name": "Street Riding",
+      "description": "Smooth street riding animations",
+      "settings": {
+        "enableWheelRotation": true,
+        "enableSuspensionMovement": true,
+        "enableEngineVibration": true,
+        "enableExhaustEffects": false,
+        "enableBrakeAnimation": true,
+        "enableChainMovement": true,
+        "enableSteeringAnimation": true,
+        "enableGearShifting": true,
+        "enableThrottleMovement": true,
+        "wheelRotationSpeed": 1.0,
+        "suspensionSensitivity": 1.0,
+        "vibrationIntensity": 0.8,
+        "animationSmoothing": 0.7,
+        "maxFPS": 60,
+        "adaptiveQuality": true
+      }
+    },
+    "performance_mode": {
+      "name": "Performance Mode",
+      "description": "Optimized for lower-end hardware",
+      "settings": {
+        "enableWheelRotation": true,
+        "enableSuspensionMovement": false,
+        "enableEngineVibration": false,
+        "enableExhaustEffects": false,
+        "enableBrakeAnimation": false,
+        "enableChainMovement": false,
+        "enableSteeringAnimation": true,
+        "enableGearShifting": true,
+        "enableThrottleMovement": true,
+        "wheelRotationSpeed": 1.0,
+        "suspensionSensitivity": 0.5,
+        "vibrationIntensity": 0.3,
+        "animationSmoothing": 0.5,
+        "maxFPS": 30,
+        "adaptiveQuality": true
+      }
+    },
+    "showcase": {
+      "name": "Showcase",
+      "description": "Maximum visual quality for demonstrations",
+      "settings": {
+        "enableWheelRotation": true,
+        "enableSuspensionMovement": true,
+        "enableEngineVibration": true,
+        "enableExhaustEffects": true,
+        "enableBrakeAnimation": true,
+        "enableChainMovement": true,
+        "enableSteeringAnimation": true,
+        "enableGearShifting": true,
+        "enableThrottleMovement": true,
+        "wheelRotationSpeed": 1.0,
+        "suspensionSensitivity": 1.2,
+        "vibrationIntensity": 1.0,
+        "animationSmoothing": 0.95,
+        "maxFPS": 120,
+        "adaptiveQuality": false
+      }
+    }
+  }
+}
