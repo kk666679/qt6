@@ -1,49 +1,48 @@
 #!/bin/bash
 
 BATCH_SIZE=100
-BATCH_NUM=1
+BATCH_COUNT=1
 
 # Pull latest changes first
 echo "Pulling latest changes..."
-git pull origin $(git branch --show-current) || echo "Pull failed, continuing..."
+git pull origin $(git branch --show-current)
 
-# Get all untracked and modified files
-FILES=($(git status --porcelain | grep -E '^(\?\?|.M|M.|A.|.A|D.|.D)' | cut -c4-))
+# Get all files that need to be committed (modified, new, deleted)
+FILES=($(git status --porcelain | awk '{print $2}'))
+TOTAL_FILES=${#FILES[@]}
 
-if [ ${#FILES[@]} -eq 0 ]; then
-    echo "No files to commit"
+if [ $TOTAL_FILES -eq 0 ]; then
+    echo "No files to commit."
     exit 0
 fi
 
-echo "Found ${#FILES[@]} files to process"
+echo "Found $TOTAL_FILES files to process in batches of $BATCH_SIZE"
 
 # Process files in batches
-for ((i=0; i<${#FILES[@]}; i+=BATCH_SIZE)); do
+for ((i=0; i<$TOTAL_FILES; i+=BATCH_SIZE)); do
     BATCH_FILES=("${FILES[@]:$i:$BATCH_SIZE}")
     
-    echo "Processing batch $BATCH_NUM (${#BATCH_FILES[@]} files)..."
+    echo "Processing batch $BATCH_COUNT (${#BATCH_FILES[@]} files)..."
     
     # Add files to staging
-    for file in "${BATCH_FILES[@]}"; do
-        git add "$file"
-    done
+    git add "${BATCH_FILES[@]}"
     
-    # Commit batch
-    COMMIT_MSG="Batch commit $BATCH_NUM: ${#BATCH_FILES[@]} files"
-    git commit -m "$COMMIT_MSG"
+    # Commit the batch
+    git commit -m "Batch commit $BATCH_COUNT: ${#BATCH_FILES[@]} files"
     
     # Tag the batch
-    TAG_NAME="batch-$BATCH_NUM-$(date +%Y%m%d-%H%M%S)"
-    git tag -a "$TAG_NAME" -m "Batch $BATCH_NUM commit tag"
+    TAG_NAME="batch-$BATCH_COUNT-$(date +%Y%m%d-%H%M%S)"
+    git tag -a "$TAG_NAME" -m "Batch $BATCH_COUNT commit tag"
     
     echo "Created commit and tag: $TAG_NAME"
     
-    ((BATCH_NUM++))
+    # Push the commit and tag
+    git push origin $(git branch --show-current)
+    git push origin "$TAG_NAME"
+    
+    echo "Pushed batch $BATCH_COUNT"
+    
+    ((BATCH_COUNT++))
 done
 
-# Push all commits and tags
-echo "Pushing commits and tags..."
-git push origin $(git branch --show-current)
-git push origin --tags
-
-echo "Batch commit process completed!"
+echo "All batches processed successfully!"

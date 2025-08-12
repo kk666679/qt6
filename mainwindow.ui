@@ -1,349 +1,549 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>800</width>
-    <height>600</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
-  </property>
-  <property name="documentMode">
-   <bool>true</bool>
-  </property>
-  <property name="dockNestingEnabled">
-   <bool>true</bool>
-  </property>
-  <property name="unifiedTitleAndToolBarOnMac">
-   <bool>true</bool>
-  </property>
-  <property name="Dyno" stdset="0">
-   <string/>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QDial" name="dial">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>160</y>
-      <width>50</width>
-      <height>64</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>240</y>
-      <width>62</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBox">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>240</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QScrollBar" name="verticalScrollBar">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>49</y>
-      <width>20</width>
-      <height>221</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Orientation::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="progressBar">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>210</y>
-      <width>461</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>24</number>
-    </property>
-   </widget>
-   <widget class="QCommandLinkButton" name="commandLinkButton">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>150</y>
-      <width>185</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>CommandLinkButton</string>
-    </property>
-   </widget>
-   <widget class="QDialogButtonBox" name="buttonBox">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>140</y>
-      <width>156</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="standardButtons">
-     <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>110</y>
-      <width>89</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>RadioButton</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>20</y>
-      <width>160</width>
-      <height>166</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QTreeView" name="treeView"/>
-     </item>
-     <item>
-      <widget class="QColumnView" name="columnView"/>
-     </item>
-     <item>
-      <widget class="QFrame" name="frame">
-       <property name="frameShape">
-        <enum>QFrame::Shape::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Shadow::Raised</enum>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>30</y>
-      <width>160</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QTableView" name="tableView"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="gridLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>40</y>
-      <width>160</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout"/>
-   </widget>
-   <widget class="QWidget" name="formLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>80</y>
-      <width>160</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <layout class="QFormLayout" name="formLayout"/>
-   </widget>
-   <widget class="QToolBox" name="toolBox">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>120</y>
-      <width>69</width>
-      <height>129</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="page">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>69</width>
-       <height>69</height>
-      </rect>
-     </property>
-     <attribute name="label">
-      <string>Page 1</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="page_2">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>69</width>
-       <height>69</height>
-      </rect>
-     </property>
-     <attribute name="label">
-      <string>Page 2</string>
-     </attribute>
-    </widget>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>190</y>
-      <width>127</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Tab 1</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Tab 2</string>
-     </attribute>
-    </widget>
-   </widget>
-   <widget class="QStackedWidget" name="stackedWidget">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>180</y>
-      <width>120</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <widget class="QWidget" name="page_3"/>
-    <widget class="QWidget" name="page_4"/>
-   </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>190</y>
-      <width>120</width>
-      <height>80</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <widget class="QDockWidget" name="dockWidget">
-   <attribute name="dockWidgetArea">
-    <number>1</number>
-   </attribute>
-   <widget class="QWidget" name="dockWidgetContents">
-    <widget class="QAxWidget" name="axWidget">
-     <property name="geometry" stdset="0">
-      <rect>
-       <x>260</x>
-       <y>160</y>
-       <width>80</width>
-       <height>70</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QSpinBox" name="spinBox_2">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>110</y>
-       <width>42</width>
-       <height>22</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="textEdit">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>120</y>
-       <width>104</width>
-       <height>71</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLCDNumber" name="lcdNumber">
-     <property name="geometry">
-      <rect>
-       <x>460</x>
-       <y>40</y>
-       <width>191</width>
-       <height>23</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QGraphicsView" name="graphicsView">
-     <property name="geometry">
-      <rect>
-       <x>370</x>
-       <y>60</y>
-       <width>256</width>
-       <height>192</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-  </widget>
- </widget>
- <customwidgets>
-  <customwidget>
-   <class>QAxWidget</class>
-   <extends>QWidget</extends>
-   <header>qaxwidget.h</header>
-  </customwidget>
- </customwidgets>
- <resources/>
- <connections/>
-</ui>
+// main.qml
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Shapes 1.15
+import QtGraphicalEffects 1.15
+
+ApplicationWindow {
+    id: mainWindow
+    width: 1200
+    height: 700
+    visible: true
+    title: "Qt6 Automotive Dashboard"
+    color: "#050a1a"
+    
+    // Simulated vehicle data
+    property real speed: 0
+    property real rpm: 0
+    property real fuel: 75
+    property real engineTemp: 85
+    property real batteryVoltage: 12.4
+    property real odometer: 12456
+    property real tripMeter: 45.2
+    property string gear: "D"
+    property bool leftTurnSignal: false
+    property bool rightTurnSignal: false
+    property bool highBeam: false
+    property bool parkingBrake: false
+    property bool checkEngine: false
+    property bool lowFuel: false
+    
+    // Animation timer
+    Timer {
+        interval: 100
+        running: true
+        repeat: true
+        onTriggered: {
+            // Simulate driving
+            if (speed < 85) speed += 0.5;
+            if (rpm < 6500) rpm += 50;
+            if (fuel > 0) fuel -= 0.01;
+            tripMeter += 0.01;
+            
+            // Simulate turn signals
+            if (Math.random() > 0.9) leftTurnSignal = !leftTurnSignal;
+            if (Math.random() > 0.9) rightTurnSignal = !rightTurnSignal;
+            
+            // Simulate warnings
+            if (fuel < 15) lowFuel = true;
+            if (engineTemp > 95) checkEngine = true;
+        }
+    }
+    
+    // Main dashboard layout
+    Rectangle {
+        anchors.fill: parent
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#050a1a" }
+            GradientStop { position: 1.0; color: "#0a1432" }
+        }
+        
+        // Speed and RPM gauges
+        Row {
+            anchors.centerIn: parent
+            spacing: 80
+            
+            // Speed gauge
+            CircularGauge {
+                id: speedGauge
+                width: 400
+                height: 400
+                minValue: 0
+                maxValue: 220
+                value: speed
+                label: "km/h"
+                
+                Behavior on value {
+                    NumberAnimation { duration: 200 }
+                }
+            }
+            
+            // RPM gauge
+            CircularGauge {
+                id: rpmGauge
+                width: 400
+                height: 400
+                minValue: 0
+                maxValue: 8000
+                value: rpm
+                label: "RPM"
+                color: "#ff3d3d"
+                
+                Behavior on value {
+                    NumberAnimation { duration: 200 }
+                }
+            }
+        }
+        
+        // Bottom panel with secondary gauges
+        Rectangle {
+            id: bottomPanel
+            width: parent.width
+            height: 200
+            anchors.bottom: parent.bottom
+            color: "transparent"
+            
+            Row {
+                anchors.centerIn: parent
+                spacing: 40
+                
+                // Fuel gauge
+                LinearGauge {
+                    id: fuelGauge
+                    width: 150
+                    height: 40
+                    minValue: 0
+                    maxValue: 100
+                    value: fuel
+                    label: "FUEL"
+                    unit: "%"
+                    warning: lowFuel
+                }
+                
+                // Temperature gauge
+                LinearGauge {
+                    id: tempGauge
+                    width: 150
+                    height: 40
+                    minValue: 50
+                    maxValue: 120
+                    value: engineTemp
+                    label: "TEMP"
+                    unit: "°C"
+                    warning: engineTemp > 95
+                }
+                
+                // Battery gauge
+                LinearGauge {
+                    id: batteryGauge
+                    width: 150
+                    height: 40
+                    minValue: 10
+                    maxValue: 15
+                    value: batteryVoltage
+                    label: "BATT"
+                    unit: "V"
+                }
+            }
+        }
+        
+        // Center information cluster
+        Rectangle {
+            id: infoCluster
+            width: 300
+            height: 150
+            anchors.centerIn: parent
+            color: "transparent"
+            
+            Column {
+                anchors.centerIn: parent
+                spacing: 10
+                
+                Text {
+                    text: gear
+                    font.pixelSize: 60
+                    font.bold: true
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    width: parent.width
+                }
+                
+                Row {
+                    spacing: 40
+                    
+                    Column {
+                        Text {
+                            text: "ODOMETER"
+                            font.pixelSize: 14
+                            color: "#aaa"
+                        }
+                        Text {
+                            text: odometer.toFixed(0) + " km"
+                            font.pixelSize: 24
+                            color: "white"
+                        }
+                    }
+                    
+                    Column {
+                        Text {
+                            text: "TRIP"
+                            font.pixelSize: 14
+                            color: "#aaa"
+                        }
+                        Text {
+                            text: tripMeter.toFixed(1) + " km"
+                            font.pixelSize: 24
+                            color: "white"
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Warning indicators
+        Column {
+            x: 20
+            y: 20
+            spacing: 15
+            
+            WarningLight {
+                active: parkingBrake
+                icon: "🚗"
+                label: "PARK BRAKE"
+            }
+            
+            WarningLight {
+                active: checkEngine
+                icon: "⚙️"
+                label: "CHECK ENGINE"
+            }
+            
+            WarningLight {
+                active: lowFuel
+                icon: "⛽"
+                label: "LOW FUEL"
+            }
+        }
+        
+        // Turn signals
+        Row {
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: 300
+            
+            TurnSignal {
+                active: leftTurnSignal
+                direction: "left"
+            }
+            
+            TurnSignal {
+                active: rightTurnSignal
+                direction: "right"
+            }
+        }
+        
+        // High beam indicator
+        Text {
+            anchors {
+                bottom: infoCluster.top
+                horizontalCenter: parent.horizontalCenter
+                bottomMargin: 20
+            }
+            text: "HIGH BEAM"
+            font.pixelSize: 18
+            color: highBeam ? "#00a8ff" : "#444"
+            visible: highBeam
+        }
+        
+        // Date and time
+        Text {
+            anchors {
+                top: parent.top
+                right: parent.right
+                margins: 20
+            }
+            text: Qt.formatDateTime(new Date(), "hh:mm ap | ddd, MMM d")
+            font.pixelSize: 18
+            color: "#aaa"
+        }
+        
+        // Logo
+        Text {
+            anchors {
+                bottom: parent.bottom
+                right: parent.right
+                margins: 20
+            }
+            text: "QT6 AUTOMOTIVE"
+            font.pixelSize: 16
+            color: "#00a8ff"
+            font.bold: true
+        }
+    }
+    
+    // Circular gauge component
+    component CircularGauge : Item {
+        property real minValue: 0
+        property real maxValue: 100
+        property real value: 0
+        property string label: ""
+        property color color: "#00a8ff"
+        
+        Rectangle {
+            anchors.fill: parent
+            radius: width / 2
+            color: "#101a33"
+            border.width: 2
+            border.color: "#1a2a5a"
+        }
+        
+        // Gauge track
+        Shape {
+            anchors.fill: parent
+            layer.enabled: true
+            layer.samples: 8
+            
+            ShapePath {
+                strokeWidth: 10
+                strokeColor: "#1a2a5a"
+                fillColor: "transparent"
+                capStyle: ShapePath.RoundCap
+                
+                PathAngleArc {
+                    centerX: parent.width / 2
+                    centerY: parent.height / 2
+                    radiusX: parent.width / 2 - 30
+                    radiusY: parent.width / 2 - 30
+                    startAngle: 135
+                    sweepAngle: 270
+                }
+            }
+            
+            // Gauge value
+            ShapePath {
+                strokeWidth: 10
+                strokeColor: color
+                fillColor: "transparent"
+                capStyle: ShapePath.RoundCap
+                
+                PathAngleArc {
+                    centerX: parent.width / 2
+                    centerY: parent.height / 2
+                    radiusX: parent.width / 2 - 30
+                    radiusY: parent.width / 2 - 30
+                    startAngle: 135
+                    sweepAngle: 270 * (value / (maxValue - minValue))
+                }
+            }
+        }
+        
+        // Needle
+        Rectangle {
+            id: needle
+            width: 4
+            height: parent.height / 2 - 50
+            color: "white"
+            x: parent.width / 2 - width / 2
+            y: parent.height / 2
+            transformOrigin: Item.Bottom
+            rotation: 135 + 270 * (value / (maxValue - minValue))
+            
+            Rectangle {
+                width: 15
+                height: 15
+                radius: width / 2
+                color: "#ff3d3d"
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: parent.bottom
+            }
+        }
+        
+        // Center circle
+        Rectangle {
+            width: 50
+            height: 50
+            radius: width / 2
+            color: "#0a1432"
+            border.width: 2
+            border.color: "#1a2a5a"
+            anchors.centerIn: parent
+        }
+        
+        // Value text
+        Text {
+            anchors.centerIn: parent
+            text: value.toFixed(0)
+            font.pixelSize: 50
+            font.bold: true
+            color: "white"
+        }
+        
+        // Label
+        Text {
+            anchors {
+                top: parent.verticalCenter
+                topMargin: 40
+                horizontalCenter: parent.horizontalCenter
+            }
+            text: label
+            font.pixelSize: 20
+            color: "#aaa"
+        }
+        
+        // Min/Max values
+        Text {
+            anchors {
+                bottom: parent.verticalCenter
+                bottomMargin: 40
+                left: parent.left
+                leftMargin: 60
+            }
+            text: minValue
+            font.pixelSize: 16
+            color: "#aaa"
+        }
+        
+        Text {
+            anchors {
+                bottom: parent.verticalCenter
+                bottomMargin: 40
+                right: parent.right
+                rightMargin: 60
+            }
+            text: maxValue
+            font.pixelSize: 16
+            color: "#aaa"
+        }
+    }
+    
+    // Linear gauge component
+    component LinearGauge : Item {
+        property real minValue: 0
+        property real maxValue: 100
+        property real value: 0
+        property string label: ""
+        property string unit: ""
+        property bool warning: false
+        
+        width: 150
+        height: 40
+        
+        Rectangle {
+            anchors.fill: parent
+            color: "#0a1432"
+            radius: 5
+            border.width: 1
+            border.color: "#1a2a5a"
+        }
+        
+        // Track
+        Rectangle {
+            width: parent.width - 20
+            height: 10
+            anchors.centerIn: parent
+            color: "#1a2a5a"
+            radius: 5
+        }
+        
+        // Value indicator
+        Rectangle {
+            width: (parent.width - 20) * (value / (maxValue - minValue))
+            height: 10
+            anchors {
+                left: parent.left
+                leftMargin: 10
+                verticalCenter: parent.verticalCenter
+            }
+            color: warning ? "#ff3d3d" : "#00a8ff"
+            radius: 5
+        }
+        
+        // Label
+        Text {
+            anchors {
+                left: parent.left
+                leftMargin: 10
+                top: parent.top
+                topMargin: 5
+            }
+            text: label
+            font.pixelSize: 14
+            color: "#aaa"
+        }
+        
+        // Value text
+        Text {
+            anchors {
+                right: parent.right
+                rightMargin: 10
+                bottom: parent.bottom
+                bottomMargin: 5
+            }
+            text: value.toFixed(1) + " " + unit
+            font.pixelSize: 14
+            color: warning ? "#ff3d3d" : "white"
+            font.bold: warning
+        }
+    }
+    
+    // Warning light component
+    component WarningLight : Row {
+        property bool active: false
+        property string icon: ""
+        property string label: ""
+        
+        spacing: 10
+        
+        Rectangle {
+            width: 40
+            height: 40
+            radius: 5
+            color: active ? "#ff3d3d" : "#1a2a5a"
+            
+            Text {
+                anchors.centerIn: parent
+                text: icon
+                font.pixelSize: 20
+            }
+        }
+        
+        Text {
+            text: label
+            font.pixelSize: 16
+            color: active ? "#ff3d3d" : "#aaa"
+            font.bold: active
+        }
+    }
+    
+    // Turn signal component
+    component TurnSignal : Item {
+        property bool active: false
+        property string direction: "left"
+        
+        width: 60
+        height: 60
+        
+        Rectangle {
+            anchors.fill: parent
+            color: active ? "#00a8ff" : "#1a2a5a"
+            radius: width / 2
+            border.width: 2
+            border.color: "#2a3a6a"
+            
+            Text {
+                anchors.centerIn: parent
+                text: direction === "left" ? "←" : "→"
+                font.pixelSize: 30
+                color: active ? "white" : "#555"
+            }
+        }
+        
+        // Animation for blinking
+        SequentialAnimation on opacity {
+            running: active
+            loops: Animation.Infinite
+            PropertyAnimation { to: 0.3; duration: 300 }
+            PropertyAnimation { to: 1; duration: 300 }
+        }
+    }
+}
