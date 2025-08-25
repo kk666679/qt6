@@ -65,6 +65,7 @@ cmake --build . --parallel 4
 
 ## Project Structure 📂
 
+```bash
 my-app/
 ├── src/                 # C++ source code 🖥️
 ├── app/                 # Next.js web interface 🌐
@@ -72,6 +73,7 @@ my-app/
 ├── scripts/             # Build and install scripts 📜
 ├── resources/           # Configuration files 🗂️
 └── build/               # Build output 📦
+```
 
 ---
 
