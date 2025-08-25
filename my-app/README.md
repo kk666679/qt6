@@ -2,8 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/yourusername/MATMOTOFIX-Dyno)
 [![License](https://img.shields.io/badge/license-Proprietary-informational)](https://github.com/yourusername/MATMOTOFIX-Dyno)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/MATMOTOFIX-Dyno/build.yml?branch=main)](https://github.com/yourusername/MATMOTOFIX-Dyno/actions)
-[![Platforms](https://img.shields.io/badge/Windows-Linux-macOS-informational)](https://github.com/yourusername/MATMOTOFIX-Dyno)
+
 
 ## Table of Contents 📑
 
