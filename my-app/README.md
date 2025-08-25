@@ -2,7 +2,13 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/yourusername/MATMOTOFIX-Dyno)
 [![License](https://img.shields.io/badge/license-Proprietary-informational)](https://github.com/yourusername/MATMOTOFIX-Dyno)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/MATMOTOFIX-Dyno/build.yml?branch=main)](https://github.com/yourusername/MATMOTOFIX-Dyno/actions)
+[![Platforms](https://img.shields.io/badge/Windows-Linux-macOS-informational)](https://github.com/yourusername/MATMOTOFIX-Dyno)
+[![C++](https://img.shields.io/badge/C++-17-informational)](https://isocpp.org/)
+[![Qt](https://img.shields.io/badge/Qt-6.5.0+-green.svg)](https://www.qt.io/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 
+Professional Motorcycle Dynamometer Software with AI-Powered Analysis.
 
 ## Table of Contents 📑
 
@@ -16,7 +22,7 @@
     *   [Windows](#windows-)
     *   [Silent Install (IT)](#silent-install-it-)
 *   [Supported Hardware](#supported-hardware-)
-*   [Architecture](#architecture-)
+*   [System Architecture](#system-architecture-)
 *   [Development](#development-)
     *   [Project Structure](#project-structure-)
     *   [Build Targets](#build-targets-)
@@ -28,73 +34,86 @@
 
 ## Overview 👀
 
-MATMOTOFIX-Dyno is a comprehensive C++ application with modern web interface for professional motorcycle dynamometer testing. Features real-time data acquisition, AI-powered performance analysis, and multi-platform support.
-
----
+**MATMOTOFIX-Dyno** is a next-generation, cross-platform software suite designed for professional motorcycle dynamometer testing. It combines a high-performance C++ core for precise real-time data acquisition with a modern, AI-powered web interface for deep performance analysis and visualization. Engineered for the workshop, it delivers the accuracy professionals demand with the flexibility of modern software.
 
 ## Features ✨
 
-*   **Real-time Dyno Testing** 📊 - Live RPM, torque, and power measurement
-*   **AI Performance Analysis** 🤖 - Intelligent optimization recommendations
-*   **Qt Automotive Interface** 🎛️ - Professional automotive-style dashboard
-*   **Web-based UI** 🌐 - Modern Figma-inspired interface with 3D visualization
-*   **Multi-platform Support** 💻 - Windows, Linux, macOS
-*   **Hardware Integration** 🔌 - Dynojet, SuperFlow, Motec ECU support
-*   **Professional Installer** 📦 - Windows SDM with driver manmanageme
+*   **Real-time Dyno Testing** 📊 - Live RPM, torque, and power measurement with high-resolution data acquisition.
+*   **AI Performance Analysis** 🤖 - Intelligent engine that analyzes data patterns to provide actionable tuning recommendations.
+*   **Dual Interface Mode** 🎛️🌐
+    *   **Qt Automotive Dashboard:** A robust, touch-friendly interface optimized for the dyno bay.
+    *   **Web-based UI:** A modern Next.js application accessible from any device for remote monitoring and advanced 3D result visualization.
+*   **Multi-platform Support** 💻 - Native execution on Windows, Linux, and macOS.
+*   **Extensive Hardware Integration** 🔌 - Seamless support for Dynojet, SuperFlow, Motec ECU, and custom serial/USB interfaces.
+*   **Professional Deployment** 📦 - Enterprise-ready Windows installer with driver management and silent deployment options.
 
----
-
-## Development 🛠️
+## Quick Start 🚀
 
 ### Prerequisites ⚙️
-- CMake 3.21+
-- Qt 6.5.0+
-- C++17 compiler
-- Node.js (for web interface)
 
-### Build & Run 🚀
+*   **CMake** 3.21+
+*   **Qt** 6.5.0+
+*   A **C++17** compatible compiler (MSVC, GCC, Clang)
+*   **Node.js** 18+ (for developing the web interface)
+
+### Build
+
 ```bash
-cd my-app
+# Clone the repository
+git clone <your-repo-url>
+cd MATMOTOFIX-Dyno
+
+# Configure and build the core application
 mkdir build && cd build
-cmake ..
-cmake --build . --parallel 4
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build . --parallel $(nproc) # Use --parallel 4 on Windows
 ```
 
----
-
-## Project Structure 📂
+### Run
 
 ```bash
-my-app/
-├── src/                 # C++ source code 🖥️
-├── app/                 # Next.js web interface 🌐
-├── components/          # React components ⚛️
-├── scripts/             # Build and install scripts 📜
-├── resources/           # Configuration files 🗂️
-└── build/               # Build output 📦
+# Run the C++ Application (starts core & web server)
+./MATMOTOFIX-Dyno
+
+# Alternatively, run the web interface in development mode
+cd ../app
+npm install
+npm run dev
+# Web UI will be available at http://localhost:3000
 ```
 
----
+## Installation 📦
 
-### 4. **Supported Hardware Badges**
+### Windows
 
-Add a row of badges to show off your hardware compatibility.
+For end-users, we provide a seamless installation experience.
+1.  Download the latest `MATMOTOFIX-Dyno-Setup.exe` from the [Releases](https://github.com/yourusername/MATMOTOFIX-Dyno/releases) page.
+2.  Run the installer. It will guide you through the setup, including installing necessary drivers for your hardware.
+3.  Connect your dynamometer hardware and launch **MATMOTOFIX-Dyno** from the Start Menu.
 
+### Silent Install (IT)
+
+For IT administrators deploying to multiple workshop stations.
+```powershell
+# Run in an elevated PowerShell window
+.\silent-install.ps1 -InstallPath "C:\Program Files\MATMOTOFIX-Dyno" -EnableDrivers $true
+```
 
 ## Supported Hardware 🔧
 
-[![Dynojet](https://img.shields.io/badge/Dynojet-250i/450i-000000?style=flat&logoColor=white)](https://dynojet.com)
-[![SuperFlow](https://img.shields.io/badge/SuperFlow-SF1020/1025-0077B6?style=flat)](https://superflow.com)
-[![Motec](https://img.shields.io/badge/Motec-M800-FF0000?style=flat)](https://motec.com.au)
-[![Custom](https://img.shields.io/badge/Interface-USB/Serial-8A2BE2?style=flat)](https://github.com/yourusername/MATMOTOFIX-Dyno)
+[![Dynojet](https://img.shields.io/badge/Dynojet-250i/450i-000000?style=for-the-badge&logoColor=white)](https://dynojet.com)
+[![SuperFlow](https://img.shields.io/badge/SuperFlow-SF1020/1025-0077B6?style=for-the-badge)](https://superflow.com)
+[![Motec](https://img.shields.io/badge/Motec-M800-FF0000?style=for-the-badge)](https://motec.com.au)
+[![Custom](https://img.shields.io/badge/Interface-USB/Serial-8A2BE2?style=for-the-badge)](https://github.com/yourusername/MATMOTOFIX-Dyno)
 
----
+*   **Dynojet:** 250i, 450i series
+*   **SuperFlow:** SF-1020, SF-1025
+*   **Motec:** M800 ECU systems
+*   **Custom:** Any device with a USB or Serial interface and a published protocol.
 
 ## System Architecture ⚙️
 
-This diagram shows the high-level components and how they interact.
-
-**Code (Using Mermaid.js - works on GitHub/GitLab):**
+### High-Level Component Overview
 
 ```mermaid
 flowchart TD
@@ -135,13 +154,7 @@ flowchart TD
     Core -- Reads/Writes --> Storage
 ```
 
----
-
-### 2. Real-Time Data Processing Flow
-
-This sequence diagram details the journey of data from the hardware to the UI.
-
-**Code (Using Mermaid.js):**
+### Real-Time Data Processing Flow
 
 ```mermaid
 sequenceDiagram
@@ -172,43 +185,54 @@ sequenceDiagram
     end
 ```
 
----
+## Development 🛠️
 
-### 3. Deployment/Platform Overview
+### Project Structure 📁
 
-This diagram shows how the software is deployed across different platforms.
-
-**Code (Using Mermaid.js):**
-
-```mermaid
-flowchart TB
-    subgraph S1 [Windows Deployment]
-        A1[MATMOTOFIX-Dyno.exe<br>Qt GUI]
-        A2[Web Server Process]
-        A3[System Tray Icon]
-        A4[Windows Service<br>For silent operation]
-    end
-
-    subgraph S2 [Linux/macOS Deployment]
-        B1[MATMOTOFIX-Dyno Binary<br>Qt GUI/Headless]
-        B2[Web Server Process]
-        B3[Systemd/Launchd Service]
-    end
-
-    subgraph Cloud [Optional Cloud Sync]
-        C1[API Gateway]
-        C2[Secure Cloud Storage<br>For test results]
-    end
-
-    U1[Technician Laptop<br>Local Network] --> S1
-    U2[Workshop PC] --> S1
-    U3[Linux Diagnostics Station] --> S2
-    U4[MacBook] --> S2
-
-    S1 -- Optional Sync --> Cloud
-    S2 -- Optional Sync --> Cloud
-
-    U5[iPad/Phone<br>Remote Viewing] -.->|Connects to Web UI| S1
-    U5 -.->|Connects to Web UI| S2
+```
+MATMOTOFIX-Dyno/
+├── src/                 # C++ source code (Core Engine, Qt UI) 🖥️
+│   ├── core/           # Data acquisition, processing, AI
+│   ├── hardware/       # Hardware abstraction layer (HAL)
+│   └── gui/            # Qt Automotive Dashboard
+├── app/                # Next.js web application 🌐
+│   ├── components/     # React components ⚛️
+│   ├── pages/          # Next.js pages
+│   └── public/         # Static assets
+├── scripts/            # Build and install scripts 📜
+│   ├── windows/        # NSIS installer scripts
+│   └── deployment/     # CI/CD and silent install
+├── resources/          # Configuration files, icons, firmware 🗂️
+└── build/              # Build output directory (Generated) 📦
 ```
 
+### Build Targets
+
+*   `MATMOTOFIX-Dyno`: The main application executable (includes Qt UI and internal web server).
+*   `matmotofix-core`: Core library for headless operation (optional).
+*   The web interface is built and bundled by `npm run build` and served by the core application.
+
+## CI/CD 🔁
+
+This project uses **GitHub Actions** for automated Continuous Integration and Deployment:
+*   **Build Testing:** On every push and pull request, code is compiled on Ubuntu, Windows, and macOS runners.
+*   **Release Packaging:** On tag creation, automated builds create standalone binaries and the Windows installer.
+*   **Deployment:** Packages are automatically uploaded to the GitHub Releases page.
+
+## License 📄
+
+**MATMOTOFIX-Dyno**  
+Copyright © 2025 MATMOTOFIX Technologies. All rights reserved.
+
+This software is proprietary and confidential. Unauthorized copying, distribution, modification, or use is strictly prohibited.
+
+## Support 🤝
+
+For technical support, documentation, and to report issues:
+1.  **Documentation:** Please first check the project [Wiki](https://github.com/yourusername/MATMOTOFIX-Dyno/wiki).
+2.  **Issues:** For bug reports and feature requests, please use the [GitHub Issues](https://github.com/yourusername/MATMOTOFIX-Dyno/issues) page.
+3.  **Discussions:** For questions and community support, head to our [GitHub Discussions](https://github.com/yourusername/MATMOTOFIX-Dyno/discussions) board.
+
+---
+*Proudly built with Qt, C++, and Next.js.*
+```
